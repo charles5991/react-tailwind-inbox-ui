@@ -1,18 +1,24 @@
 {
-  "name": "tailwind-react-inbox-ui",
+  "name": "charles-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@emotion/core": "10.0.22",
     "@emotion/styled": "10.0.23",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
+    "@material-tailwind/react": "^2.1.8",
     "autoprefixer": "9.7.1",
+    "axios": "^1.6.5",
     "postcss-cli": "6.1.3",
+    "qs": "^6.11.2",
+    "rc-pagination": "^4.0.4",
+    "rc-table": "^7.37.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-icons": "3.8.0",
     "react-scripts": "3.2.0",
-    "tailwind.macro": "1.0.0-alpha.10",
-    "tailwindcss": "1.1.3"
+    "tailwind.macro": "1.0.0-alpha.10"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "1.3.0"
+    "@fullhuman/postcss-purgecss": "1.3.0",
+    "tailwindcss": "^3.4.1"
   }
 }

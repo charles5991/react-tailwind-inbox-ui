@@ -1,17 +1,25 @@
 import React from "react"
 
-export default function MainlInfo() {
+export default function MainlInfo({ characterDetails }) {
+  if (!characterDetails) {
+    return (
+      <div className="flex gap-8 justify-evenly bg-white px-4 py-16">
+        <h1 className="text-2xl font-semibold">
+          Select a character to display info
+        </h1>
+      </div>
+    )
+  }
+
   return (
-    <div className="flex justify-between bg-white p-4">
-      <span className="text-xl truncate">
-        Re: Student Discount?Re: Student Discount?Re: Student Discount?Re:
-        Student Discount?
-      </span>
-      <div className="flex-shrink-0">
-        <span className="text-sm ml-3">#148</span>
-        <button className="rounded-full bg-green-300 px-2 ml-4 text-sm text-green-900">
-          Active
-        </button>
+    <div className="flex gap-8 justify-start bg-white  px-8 py-16 items-center">
+      <img
+        src={characterDetails.image}
+        alt={characterDetails.name}
+        className="rounded-full h-20 w-20 object-cover"
+      />
+      <div>
+        <h1 className="text-2xl font-bold">{characterDetails.name}</h1>
       </div>
     </div>
   )
